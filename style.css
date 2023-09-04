@@ -1,0 +1,75 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-family: 'Courier New', Courier, monospace;
+  color: rgb(224, 160, 20);
+}
+
+input[type=text]:focus {
+  background-color: rgb(255, 102, 102);
+}
+
+input:focus::placeholder {
+  color: black;
+}
+
+body {
+  background: linear-gradient(rgb(255, 102, 102), rgb(83, 143, 255));
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+input {
+  font-size: larger;
+}
+
+.search-container {
+  display: inline-block;
+  position: relative;
+}
+.search-container input,
+.search-container .suggestions {
+  width: 100%;
+  background: #fff;
+  text-align: left;
+}
+.search-container input {
+  height: 60px;
+  padding: 0 10px;
+}
+.search-container .suggestions {
+  position: absolute;
+
+}
+
+ul {
+  list-style-type: none;
+  display: block;
+  padding: 0;
+  margin: 0;
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+ul.has-suggestions {
+  display: block;
+}
+ul li {
+  padding: 10px;
+  text-align: left;
+  cursor: pointer;
+}
+ul li:hover {
+  background-color: rgb(255, 102, 102);
+}
+
+input {
+
+}
