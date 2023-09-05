@@ -135,12 +135,12 @@ function showSuggestions(results, inputVal) {
   }
 }
 
+// populate the input box with user selection
 function useSuggestion(e) {
   if(e.target.localName === "b") {
     input.value = e.target.parentElement.innerText
   } else {
     input.value = e.target.innerText
-
   }
 
   while (suggestions.lastChild) {
